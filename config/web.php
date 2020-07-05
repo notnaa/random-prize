@@ -40,13 +40,7 @@ $config = [
             ],
         ],
         'db' => $db,
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-                '' => 'prize/index',
-            ],
-        ],
+        'urlManager' => require __DIR__ . '/url_manager.php',
     ],
     'params' => $params,
 ];

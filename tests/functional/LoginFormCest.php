@@ -37,7 +37,7 @@ class LoginFormCest
     public function internalLoginById(\FunctionalTester $I)
     {
         $I->amLoggedInAs(2);
-        $I->amOnPage('/');
+        $I->amOnPage('/prize/index');
         $I->see('Logout (admin@test.ru)');
     }
 
@@ -45,7 +45,7 @@ class LoginFormCest
     public function internalLoginByInstance(\FunctionalTester $I)
     {
         $I->amLoggedInAs(\app\models\User::findByEmail('admin@test.ru'));
-        $I->amOnPage('/');
+        $I->amOnPage('/prize/index');
         $I->see('Logout (admin@test.ru)');
     }
 

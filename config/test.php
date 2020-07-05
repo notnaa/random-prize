@@ -10,7 +10,7 @@ return [
     'basePath' => dirname(__DIR__),
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
-        '@npm'   => '@vendor/npm-asset',
+        '@npm' => '@vendor/npm-asset',
     ],
     'language' => 'en-US',
     'components' => [
@@ -21,9 +21,9 @@ return [
         'assetManager' => [
             'basePath' => __DIR__ . '/../web/assets',
         ],
-        'urlManager' => [
+        'urlManager' => array_merge(require __DIR__ . '/url_manager.php', [
             'showScriptName' => true,
-        ],
+        ]),
         'user' => [
             'identityClass' => 'app\models\User',
         ],
