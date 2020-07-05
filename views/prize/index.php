@@ -18,7 +18,7 @@ $this->title = 'Raffle prizes';
 
         <?php if (\Yii::$app->getUser()->isGuest) : ?>
             <p>
-                <?= Html::a('Get prize', ['site/login'], ['class' => 'btn btn-lg btn-success']); ?>
+                <?= Html::a('Get prize', ['auth/login'], ['class' => 'btn btn-lg btn-success']); ?>
             </p>
         <?php else : ?>
             <?php Pjax::begin(); ?>
@@ -43,7 +43,7 @@ $this->title = 'Raffle prizes';
                             <?= $result->getFormattedText(); ?>
                         </p>
                     <p>
-                        <?= Html::a('Refuse', ['site/refuse', 'id' => $result->getModel()->id]); ?>
+                        <?= Html::a('Refuse', ['prize/refuse', 'id' => $result->getModel()->id]); ?>
                     </p>
                     <?php endif; ?>
                 </div>

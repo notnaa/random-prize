@@ -41,7 +41,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="col-lg-offset-1" style="color:#999;">
         <span>
-            <?= sprintf('If you do have an account, please %s', Html::a('login', ['site/login'])); ?>
+            <?= sprintf('If you do have an account, please %s', Html::a('login', ['auth/login'])); ?>
         </span>
     </div>
 </div>

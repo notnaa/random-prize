@@ -24,7 +24,7 @@ class LoginFormCest
      */
     public function _before(\FunctionalTester $I)
     {
-        $I->amOnRoute('site/login');
+        $I->amOnRoute('auth/login');
     }
 
     public function openLoginPage(\FunctionalTester $I)

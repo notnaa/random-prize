@@ -12,7 +12,7 @@ $config = [
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
-        'defaultRoute' => 'site/login',
+        'defaultRoute' => 'auth/login',
         'request' => [
             'cookieValidationKey' => 'IbgyzQoNywy9BQIvQ1AboXsEymyPBUHD',
         ],
@@ -44,6 +44,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                '' => 'prize/index',
             ],
         ],
     ],
