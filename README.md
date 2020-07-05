@@ -1,4 +1,4 @@
-#Random prize app
+# Random prize app
 
 ## INIT
 - `composer install`
